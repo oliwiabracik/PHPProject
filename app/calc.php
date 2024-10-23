@@ -68,3 +68,4 @@ if (validate($amount, $years, $interest, $messages)) {
 // Wywołanie widoku
 include 'calc_view.php';
 ?>
+
