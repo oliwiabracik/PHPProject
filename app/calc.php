@@ -39,6 +39,11 @@ function validate(&$amount, &$years, &$interest, &$messages) {
         $messages[] = 'Oprocentowanie musi być liczbą dodatnią';
     }
 
+    // Convert parameters to numbers after validation
+    $amount = (float)$amount;
+    $years = (int)$years;
+    $interest = (float)$interest;
+
     return count($messages) === 0;
 }
 
